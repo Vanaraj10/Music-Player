@@ -116,7 +116,7 @@ const App = () => {
     },
   ];
 
-  const videoArray = ["/videos/video1.mp4", "/videos/video2.mp4",'/videos/video3.mp4'];
+  const videoArray = ["/videos/v1.mp4", "/videos/v2.mp4",'/videos/v3.mp4'];
   
   const nextVideo = ()=>{
     setCurrentVideo((currentVideo+1)%videoArray.length)
