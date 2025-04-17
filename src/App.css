@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family:"Poppins",sans-serif;
+}
+.main-container{
+    display: flex;
+    place-self: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 45%;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    box-shadow: 0 0 20px rgba(26,26,26,0.1),
+    0 0 40px rgba(26,26,26,0.1),
+    0 0 80px rgba(26,26,26,0.1);
+}
+.main-container img{
+    border-radius: 50%;
+    width: 200px;
+}
+.music-controls{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.music-controls img{
+    width: 35px;
+    filter: grayscale(100%);
+}
+.duration{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+}
+.progress-bar{
+    height: 7px;
+    width: 85%;
+}
+.backgroundVideo{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    z-index: -1;
+    filter: opacity(0.8);
+}
+.music-head{
+    font-size: 0.9rem;
+    color: rgb(220, 220, 220);
+}
+.artist-name{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Media query for screens smaller than 768px (common breakpoint for tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+    .main-container {
+      width: 88%; /* Adjust width for smaller screens */
+    }
+  
+    .main-container img {
+      width: 180px /* Reduce image size */
+    }
+  
+    .music-controls img {
+      width: 30px; /* Reduce control button size */
+    }
+  
+    .progress-bar {
+      width: 100%; /* Make progress bar full width */
+    }
+  
+    .music-head {
+      font-size: 0.8rem; /* Adjust font size */
+    }
+  
+    .artist-name {
+      font-size: 0.8rem; /* Adjust font size */
+    }
+  }
+.volume-controls img{
+  width: 20px;
+}
+.volume-controls{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.change-video{
+  background-color: rgba(87, 87, 87, 0.195);
+  padding: 8px;
+  width: max-content;
+  margin-top: 10px;
+  place-self: center;
+  border-radius: 12px;
+  color: white;
+}
+.footer{
+  color:rgb(253, 50, 50);
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  place-self: center;
+}
