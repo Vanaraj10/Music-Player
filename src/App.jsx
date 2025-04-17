@@ -124,7 +124,7 @@ const App = () => {
 
   return (
     <>
-      <audio src={currentMusicDetails.songSrc} ref={currentAudio}></audio>
+      <audio src={currentMusicDetails.songSrc} ref={currentAudio} preload="auto"></audio>
       <video
         src={videoArray[currentVideo]}
         loop
@@ -137,7 +137,7 @@ const App = () => {
         <h2 className="music-head">Music Player</h2>
         <h2 className="song-name">{currentMusicDetails.songName}</h2>
         <p className="artist-name">{currentMusicDetails.songArtist}</p>
-        <img src={currentMusicDetails.songAvatar} loading="lazy"></img>
+        <img src={currentMusicDetails.songAvatar} loading="lazy" preload="auto"></img>
         <div className="duration">
           <p>{formatTime(currentDuration)}</p>
           <p>{formatTime(totalDuration)}</p>
