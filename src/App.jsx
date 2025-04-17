@@ -130,13 +130,14 @@ const App = () => {
         loop
         muted
         autoPlay
+        preload="auto"
         className="backgroundVideo"
       ></video>
       <div className="main-container">
         <h2 className="music-head">Music Player</h2>
         <h2 className="song-name">{currentMusicDetails.songName}</h2>
         <p className="artist-name">{currentMusicDetails.songArtist}</p>
-        <img src={currentMusicDetails.songAvatar}></img>
+        <img src={currentMusicDetails.songAvatar} loading="lazy"></img>
         <div className="duration">
           <p>{formatTime(currentDuration)}</p>
           <p>{formatTime(totalDuration)}</p>
